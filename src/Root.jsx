@@ -4,16 +4,20 @@ import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import ExerciseDetails from "./components/ExerciseDetails";
 import Footer from "./components/Footer";
+import { Box, CssBaseline } from "@mui/material";
 
 const Root = () => {
   return (
     <BrowserRouter>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/exercise/:id" element={<ExerciseDetails />} />
-      </Routes>
-      <Footer />
+      <CssBaseline />
+      <Box>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/exercise/:id" element={<ExerciseDetails />} />
+        </Routes>
+        <Footer />
+      </Box>
     </BrowserRouter>
   );
 };
