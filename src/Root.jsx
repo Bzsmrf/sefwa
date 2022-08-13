@@ -10,14 +10,12 @@ const Root = () => {
   return (
     <BrowserRouter>
       <CssBaseline />
-      <Box>
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/exercise/:id" element={<ExerciseDetails />} />
-        </Routes>
-        <Footer />
-      </Box>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/exercise/:id" element={<ExerciseDetails />} />
+      </Routes>
+      <Footer />
     </BrowserRouter>
   );
 };
