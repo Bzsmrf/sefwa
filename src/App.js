@@ -1,10 +1,9 @@
 import './App.css';
+import Root from './Root';
 
 function App() {
   return (
-    <div >
-      Bismillahir Rahmanir Rahim
-    </div>
+    <Root/>
   );
 }
 
