@@ -8,7 +8,9 @@ const Navbar = () => {
     <Container>
       <Stack direction="row">
         <FitnessCenter />
-        <Link to="/">Home</Link>
+        <Link to="/" sx={{ }}>
+          Home
+        </Link>
         <Link to="/excercise">Exercise</Link>
       </Stack>
     </Container>
