@@ -1,0 +1,2 @@
+## Sefwa 
+Sefwa is a fitness excercise web app build with ReactJS & Material UI. This application data has been fetched from server. The motive of this project to learn how to learn, customize & use Material UI. Hopefully this will help you to learn ReactJS & Material UI best practices.
