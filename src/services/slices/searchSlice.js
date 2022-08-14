@@ -5,11 +5,19 @@ const initialState = {
   search: {},
 };
 
-const fetchSearch = createAsyncThunk("search/fetchSearch", async () => {
+const fetchSearch = createAsyncThunk("search/fetchSearch", async (term) => {
   return await exerciseApi
-    .get(`/bodyPartList`)
+    .get(``)
     .then((res) => {
-      console.log(res);
+      //   return res.data.filter((d) => {
+      //     return (
+      //       d.name.toLowerCase().includes(term) ||
+      //       d.bodyParts.toLowerCase().includes(term) ||
+      //       d.target.toLowerCase().includes(term) ||
+      //       d.equipment.toLowerCase().includes(term)
+      //     );
+      //   });
+
       return res.data;
     })
     .catch((e) => {
