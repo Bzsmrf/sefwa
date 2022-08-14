@@ -32,6 +32,7 @@
 .searchExercise .textField {
   height: 10px;
   width: 250px;
+  position: relative;
 }
 
 .searchExercise .textField div {
@@ -44,6 +45,7 @@
 }
 
 .searchExercise button {
+  position: absolute;
   height: 42px;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
