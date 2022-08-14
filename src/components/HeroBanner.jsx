@@ -2,12 +2,15 @@ import React from "react";
 import { Box, Button, Grid, Typography } from "@mui/material";
 import classes from "../styles/All.module.css";
 
-
 const HeroBanner = () => {
   return (
     <Box>
-      <Grid container className={classes.heroGridContainer}>
-        <Grid item>
+      <Grid
+        container
+        className={classes.heroGridContainer}
+        justifyContent="center"
+      >
+        <Grid item textAlign="center" lg={3}>
           <Typography variant="h4" color="error">
             Sefwa Zone
           </Typography>
