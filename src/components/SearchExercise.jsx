@@ -6,7 +6,10 @@ import { useDispatch } from "react-redux";
 
 const SearchExercise = () => {
   const [term, setTerm] = useState("");
+  // const [searched, setSearched] = useState([]);
   const dispatch = useDispatch();
+  // const search = useSelector();
+  // console.log(search);
 
   const handleSearch = (e) => {
     e.preventDefault();
