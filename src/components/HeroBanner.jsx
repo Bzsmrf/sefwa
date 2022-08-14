@@ -5,17 +5,14 @@ import classes from "../styles/All.module.css";
 const HeroBanner = () => {
   return (
     <Box>
-      <Grid
-        container
-        className={classes.heroGridContainer}
-        justifyContent="center"
-      >
-        <Grid item textAlign="center" lg={3}>
+      <Grid container className={classes.heroGridContainer}>
+        <Grid item lg={3}>
           <Typography variant="h4" color="error">
             Sefwa Zone
           </Typography>
-          <Typography variant="h5">Sweat, Smile</Typography>
-          <Typography variant="h5">& Repeat</Typography>
+          <Typography variant="h5">
+            Sweat, Smile <br />& Repeat
+          </Typography>
           <Typography variant="subtitle1" color="GrayText">
             Check out the most effective exercise
           </Typography>
