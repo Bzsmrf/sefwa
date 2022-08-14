@@ -24,4 +24,28 @@
 .heroGridContainer div h6 {
   margin-top: 20px;
 }
+
+.searchExercise {
+  padding: 50px 0;
+}
+
+.searchExercise .textField {
+  height: 10px;
+  width: 250px;
+}
+
+.searchExercise .textField div {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.searchExercise .textField div input {
+  padding: 10px;
+}
+
+.searchExercise button {
+  height: 42px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
 /*# sourceMappingURL=All.module.css.map */
