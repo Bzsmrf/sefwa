@@ -7,4 +7,21 @@
   color: #3a1212;
   border-bottom: 3px solid #ff2625;
 }
+
+.heroGridContainer {
+  z-index: 1;
+}
+
+.heroGridContainer div h4 {
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.heroGridContainer div h5 {
+  margin-bottom: 3px;
+}
+
+.heroGridContainer div h6 {
+  margin-top: 20px;
+}
 /*# sourceMappingURL=All.module.css.map */
