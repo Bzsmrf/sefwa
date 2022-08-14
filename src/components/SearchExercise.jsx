@@ -11,7 +11,9 @@ const SearchExercise = () => {
   const handleSearch = (e) => {
     e.preventDefault();
     if (term !== "") {
-      dispatch(fetchSearch(term.toLowerCase()));
+      const text = term.toLowerCase();
+      console.log(text);
+      dispatch(fetchSearch(text));
       console.log(term);
       setTerm("");
     }
