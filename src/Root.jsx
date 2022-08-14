@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import ExerciseDetails from "./components/ExerciseDetails";
 import Footer from "./components/Footer";
-import { Box, CssBaseline } from "@mui/material";
+import { CssBaseline } from "@mui/material";
 
 const Root = () => {
   return (
