@@ -1,3 +1,4 @@
+import { Fitbit } from "@mui/icons-material";
 import { Box, Paper, Stack, styled } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
@@ -13,21 +14,27 @@ const Category = () => {
   }, [dispatch]);
 
   return (
-    <Box>
+    <Box py={5}>
       <Stack direction="row" spacing={2}>
         {Object.keys(categories).length === 0 ? (
           <Box>Loading...</Box>
         ) : (
           categories.map((category, index) => (
-            <Paper
+            <Stack
+              justifyContent="center"
+              //   alignContent="center"
+              //   alignSelf="center"
+              alignItems="center"
               key={index}
               sx={{
                 width: "128px",
                 height: "128px",
+                margin: "0 auto",
               }}
             >
+              <Fitbit />
               {category}
-            </Paper>
+            </Stack>
           ))
         )}
       </Stack>
