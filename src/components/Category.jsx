@@ -1,5 +1,13 @@
 import { Fitbit } from "@mui/icons-material";
-import { Box, Paper, Stack, styled } from "@mui/material";
+import {
+  Box,
+  Grid,
+  Paper,
+  Skeleton,
+  Stack,
+  styled,
+  Typography,
+} from "@mui/material";
 import React, { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { fetchCategory, getCategory } from "../services/slices/categorySlice";
@@ -14,30 +22,23 @@ const Category = () => {
   }, [dispatch]);
 
   return (
-    <Box py={5}>
-      <Stack direction="row" spacing={2}>
+    <Box py={5} sx={{ overflowX: "auto" }}>
+      <Grid container>
         {Object.keys(categories).length === 0 ? (
           <Box>Loading...</Box>
         ) : (
           categories.map((category, index) => (
-            <Stack
-              justifyContent="center"
-              //   alignContent="center"
-              //   alignSelf="center"
-              alignItems="center"
-              key={index}
-              sx={{
-                width: "128px",
-                height: "128px",
-                margin: "0 auto",
-              }}
-            >
-              <Fitbit />
-              {category}
-            </Stack>
+            <Grid item lg={5} md={4} sm={3} xs={2} key={index}>
+              <Stack key={index} alignItems="center" mt={4}>
+                <Fitbit />
+                <Typography variant="p" textTransform="capitalize" mt="5">
+                  {category}
+                </Typography>
+              </Stack>
+            </Grid>
           ))
         )}
-      </Stack>
+      </Grid>
     </Box>
   );
 };
