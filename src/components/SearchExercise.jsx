@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import classes from "../styles/All.module.css";
 import { fetchSearch } from "../services/slices/searchSlice";
 import { useDispatch } from "react-redux";
+import Category from "./Category";
 
 const SearchExercise = () => {
   const [term, setTerm] = useState("");
@@ -23,26 +24,35 @@ const SearchExercise = () => {
   };
 
   return (
-    <Box className={classes.searchExercise}>
-      <Grid container justifyContent="center">
-        <Grid item lg={3}>
-          <Typography variant="h4" textAlign="center" mb={5}>
-            Awesome Exercise You
-            <br />
-            Should Know
-          </Typography>
-          <TextField
-            placeholder="Search exercise..."
-            className={classes.textField}
-            value={term}
-            onChange={(e) => setTerm(e.target.value)}
-          />
-          <Button variant="contained" color="error" onClick={handleSearch}>
-            Search
-          </Button>
+    <>
+      <Box className={classes.searchExercise}>
+        <Grid container justifyContent="center">
+          <Grid item lg={3}>
+            <Typography variant="h4" textAlign="center" mb={5}>
+              Awesome Exercise You
+              <br />
+              Should Know
+            </Typography>
+            <TextField
+              placeholder="Search exercise..."
+              className={classes.textField}
+              value={term}
+              onChange={(e) => setTerm(e.target.value)}
+            />
+            <Button variant="contained" color="error" onClick={handleSearch}>
+              Search
+            </Button>
+          </Grid>
         </Grid>
-      </Grid>
-    </Box>
+      </Box>
+      <Box sx={{ overflowX: "auto", width: "100%" }}>
+        <Grid container>
+          <Grid item lg={3}>
+            <Category />
+          </Grid>
+        </Grid>
+      </Box>
+    </>
   );
 };
 
