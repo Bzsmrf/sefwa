@@ -45,12 +45,8 @@ const SearchExercise = () => {
           </Grid>
         </Grid>
       </Box>
-      <Box sx={{ overflowX: "auto", width: "100%" }}>
-        <Grid container>
-          <Grid item lg={3}>
-            <Category />
-          </Grid>
-        </Grid>
+      <Box>
+        <Category />
       </Box>
     </>
   );
